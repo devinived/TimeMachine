@@ -1,0 +1,142 @@
+@font-face {
+    font-family: DS-digital;
+    src: url('DS-DIGI.ttf') format('truetype');
+}
+
+body {
+    font-family: ds-digital, monospace;
+    line-height: 1.6;
+    margin: auto;
+    padding: 0;
+    font-size: 2vw;
+    opacity: 0.8;
+    transition: 0.5s ease-in-out
+}
+
+
+h1{
+    font-size: 200%;
+    color: #124fc1;
+    text-shadow: 1px 3px 2px #030f30;
+    margin-top: 4vh;
+    text-align: center;
+    letter-spacing: normal;
+    transition:.5s;
+}
+h1::selection{
+    color:#c11212;
+}
+#timerDisplay {
+    display: flex;
+    margin:auto;
+    justify-content: center;
+    font-size: 10vw;
+    width:40%;
+    color: #124fc1;
+    text-shadow: 1px 3px 2px #030f30;
+
+    background-color: #ffffff;
+    border: 5px solid #c11212;
+    border-radius: 2vw;
+    transition: 0.2s ease-out;
+}
+
+#timerDisplay .countdown {
+    margin:0px 2px;
+    padding:5px;
+    border-radius: 7px;
+
+}
+#timerDisplay > span::selection{
+    color:#c11212;
+
+}
+.countdown::selection{
+    color:#c11212;
+}
+#timerLabels {
+    display: none;
+    justify-content: center;
+    font-size: 1.6vw;
+    color: #124fc1;
+    text-shadow: 1px 3px 2px #030f30;
+    text-align: center;
+    transition:.5s;
+}
+#timerLabels .label{
+    margin:0px 4.2vw;
+    justify-content: center;
+}
+
+#timerInputs {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+#timerInputs input {
+    width: 10vw;
+    font-size: 100%;
+    font-family: ds-digital, monospace;
+
+    margin: 0 5px;
+    padding: 5px;
+    border: 3px solid #124fc1;
+    border-radius: 4px;
+    transition: .5s;
+}
+#timerInputs::selection{
+    color:#c11212;
+}
+#timerInputs :hover {
+    border-color: #000000;
+    box-shadow: 0 0 5px #124fc1;
+    width:11vw;
+}
+#buttons {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+#buttons button {
+    background-color: #124fc1;
+    text-shadow: 1px 3px 2px #030f30;
+    color: white;
+    border: white solid 4px;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 100%;
+    font-family: ds-digital, monospace;
+    border-radius: 4px;
+    width:15vw;
+    transition: .5s;
+}
+#buttons button:hover {
+    background-color: white;
+    color: #124fc1;
+    border:#21c112 solid 4px;
+
+}
+#buttons button#resetButton {
+    display:none;
+
+}
+#buttons button#resetButton:hover {
+    border:#c11212 solid 4px;
+
+}
+
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin:auto;
+    background-color: #c11212;
+    color: white;
+    text-align: center;
+    font-size: 100%;
+    transition:.5s;
+  }

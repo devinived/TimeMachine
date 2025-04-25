@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>the time machine</title>
+    <link rel="stylesheet" href="style.css"/>
+    <audio id="alarmSound" src="alarm.mp3" preload="auto"></audio>
+</head>
+<body>
+    <div id="header"><h1>the time machine</h1></div>
+
+    <div class="overlay"> </div>
+
+    <div id="timerDisplay">
+        <div class = "countdown" id="HH">00</div><span>:</span>
+        <div class = "countdown" id="MM">00</div><span>:</span>
+        <div class = "countdown" id="SS">00</div>
+    </div>
+    <div id="timerLabels">
+        <div class="label">HOURS</div>
+        <div class="label">MINUTES</div>
+        <div class="label">SECONDS</div>
+    </div>
+    
+    <div id="timerInputs">
+        <input type="number" id="hours" placeholder="hours" min="0" max="23"/>
+        <input type="number" id="minutes" placeholder="mins" min="0" max="59"/>
+        <input type="number" id="seconds" placeholder="secs" min="0" max="59"/>
+    </div>
+    <div id="buttons">
+        <button id="actionButton">Start</button>
+        <button id="resetButton">Reset</button>
+        
+    </div>
+    
+
+    <div id="footer">&copy; devin spicer 2025</div>
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
